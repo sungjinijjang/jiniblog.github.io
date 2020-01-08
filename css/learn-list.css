@@ -1,0 +1,79 @@
+
+
+
+.learn-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-list2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learn-list__items {
+    display: block;
+    align-items: center;
+    font-size: 22px;
+}
+
+.learn-title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.learn-engword {
+    display: flex;
+    font-size: 60px;
+    margin-right: 60px;
+}
+
+.learn-l {
+    font-size: 60px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.learn-r {
+    font-size: 60px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.learn-img {
+    width: 350px;
+}
+
+.learn-write {
+    width: 350px;
+    height: 80px;
+    font-size: 30px;
+    border: 3px solid lightgray;
+    border-radius: 100px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: lightgray;
+    text-align: center;
+}
+
+.learn-submit {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #FB5675;
+    border: 2px solid #FB5675;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+

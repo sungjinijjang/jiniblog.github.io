@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>오! 이렇게 쉬운 영어!</title>
+
+
+
+</head>
+<body>
+
+    <!-- status -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <a href="#" class="nav-list"><span class="status-bar__menu">메뉴</span></a>
+        </div>
+        <div>
+            <a href="index.html" class="nav-list">
+                <span class="satatus-bar__logo">오! 이렇게 쉬운 영어!</span></a>
+        </div>
+        <div>
+            <a href="#" class="nav-list"><span class="satatus-bar__login">로그인</span></a>
+        </div>
+    </div>
+
+    <!-- <div class="middle-bar"></div> -->
+
+    <!-- header -->
+    <div class="header">
+        <div class="header__column">
+            <a href="index.html" class="nav-list"><span class="header__my">내 단어장</span></a>
+        </div>
+        <div>
+            <a href="quiz.html" class="nav-list"><span class="header__quiz">퀴즈</span></a>
+        </div>
+        <div>
+            <a href="otherlearn.html" class="nav-list"><span class="header__other">다른 단어장</span></a>
+        </div>
+    </div>
+    
+    <div class="middle-bar"></div>
+
+    <br><br>
+    <!-- word main -->
+    <main class="main">
+        <div class="wordplus-body">
+            <form action="">
+        <ul class="main__list">
+            <div class="word-title">
+                <div class="word-title__column">
+                    <span class="word-make">내 단어장 만들기</span>
+                </div>
+            </div>
+        </ul>
+
+        <div class="middle-bar2"></div>
+
+        <ul class="main__list">
+            <div class="word-check">
+                    <input type="checkbox" id="chk" class="wordcheck">
+                    <label for="chk"><span></span>공유</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="chk2" class="wordcheck">
+                    <label for="chk2"><span></span>비공유</label>                
+            </div>
+        </ul>
+        
+        <div class="middle-bar2"></div>
+
+        <ul class="main__list">
+            <div class="word-name">
+                <span class="word-name__title">단어장 이름</span>
+                <input type="text" class="wordname">
+            </div>
+        </ul>
+
+        <div class="middle-bar2"></div>
+
+        <!-- Capter -->
+        <ul class="main__list">
+            <div class="wordchapter-list">
+            <div class="wordchapter">
+                <span class="word-chapter">Chapter1</span>
+                <input type="button" value="추가" class="chapter-plus">
+            </div>
+
+            <!-- <div class="wordchapter2">
+                <button type="button" class="chapter-x">x</button>
+            </div> -->
+        </div>
+        </ul>
+
+        <!-- 영어단어 -->
+        <ul class="main__list">
+            <div class="wordeng-list">
+                <span class="wordeng-title">영어단어</span>
+                <input type="text" id="engword" class="wordeng-write">
+                <input type="button" value="추가" class="chapter-plus" name="addButton" onclick="addTag()" style="cursor: hand;">
+                <br>
+                <span class="wordkor-title">한글단어</span>
+                <input type="text" id="korword" class="wordkor-write"><br>
+                <span class="wordhint-title">Hint</span>
+                <input type="file" id="fileword" class="wordhint-add" title="파일찾기">
+                <br>
+                
+                <!-- 영어단어 추가 -->
+                <div class="wordeng-list">
+                    <table width="420" id="addTable">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </ul>
+
+
+        <!-- Chapter 추가 -->
+        
+
+
+            </form>
+        </div>
+    </main>
+    
+
+    <script>
+    // 영어단어 추가 버튼 클릭시 태그 추가
+    var rowIndex = 1;
+        function addTag(){
+
+            // 10개 이상 추가 안됨
+            if(rowIndex > 9){
+                alert("10개 이상 추가할 수 없습니다.");
+            }else{
+                rowIndex++;
+            }
+
+            // 테이블에 태그 추가하기
+            var getTag = document.getElementById("addTable");
+            var getRow = getTag.insertRow(getTag.rows.length);
+            var getCell = getRow.insertCell(0);
+
+            getCell.innerHTML = "<span class='wordeng-title'>영어단어</span><input type=text id='engword' class='wordeng-write' name=addText><input type=button class='wordeng-delete' value='삭제' onClick='deleteTag()' style='cursor:hand'><br><span class='wordkor-title'>한글단어</span><input type=text class='wordkor-write'><br><span class='wordhint-title'>Hint</span><input type=file class='wordhint-add'> ";
+
+        }
+
+        // 영어단어 삭제 버튼 클릭시 태그 삭제
+        function deleteTag(){
+            
+            // 태그가 0 이하일 때까지 삭제
+            if(rowIndex < 0){
+                return false;
+            }else{
+                rowIndex--;
+            }
+
+            var getTag = document.getElementById("addTable");
+            getTag.deleteRow(rowIndex);
+
+        }
+    
+    </script>
+    
+
+</body>
+</html>

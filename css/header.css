@@ -1,0 +1,30 @@
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header__my {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__quiz {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__other {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

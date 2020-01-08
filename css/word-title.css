@@ -1,0 +1,171 @@
+
+
+
+.word-title {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wordplus-body {
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 20px 20px;
+    border: #eaeaea;
+    border-radius: 15px;
+}
+
+.word-check {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* checkbox1 */
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:black;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+.word-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.word-name__title {
+    margin-right: 20px;
+}
+
+.wordname {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.wordchapter-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.wordchapter {
+    margin-left: 20px;
+}
+
+.wordchapter2 {
+    margin-right: 20px;
+}
+
+.word-chapter {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chapter-x {
+    margin-left: 10px;
+    background-color: #FB5675;
+    border: 2px solid #FB5675;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.chapter-plus {
+    margin-left: 10px;
+    background-color: #00c6ff;
+    border: 2px solid #00c6ff;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wordeng-delete {
+    margin-left: 10px;
+    background-color: #52e084;
+    border: 2px solid #52e084;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wordeng-list {
+    align-items: center;
+}
+
+.wordeng-title {
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wordkor-title {
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wordhint-title {
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.wordeng-write {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.wordkor-write {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.wordhint-add {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+

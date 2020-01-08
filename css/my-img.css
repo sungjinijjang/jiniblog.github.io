@@ -1,0 +1,162 @@
+
+
+
+.my-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.my-img__basic {
+    position: relative;
+    border: 3px solid #FB5675;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.my-img__mymake {
+    position: relative;
+    border: 3px solid #52e084;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.my-img__myplus {
+    position: relative;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.my-img__other {
+    position: relative;
+    border: 3px solid #00c6ff;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.my-text {
+    color: #FB5675;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.my-text2 {
+    color: #52e084;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.my-text3 {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.my-textother {
+    color: #00c6ff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.my-count {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.my-num {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.my-bar {
+    height: 1px;
+    background: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-plus {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.mybasic-update {
+    background-color: #FB5675;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FB5675;
+    border-radius: 5px;
+    width: 160px;
+    height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mymake-update {
+    background-color: #52e084;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #52e084;
+    border-radius: 5px;
+    width: 160px;
+    height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.myother-update {
+    background-color: #00c6ff;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #00c6ff;
+    border-radius: 5px;
+    width: 160px;
+    height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 3px;
+    cursor: pointer;
+    text-align: center;
+}
